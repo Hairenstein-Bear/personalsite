@@ -1,0 +1,117 @@
+*{
+    margin: none;
+    padding: none;
+}
+            @keyframes cardFocus{
+                20%{
+                    transform: translateY(-8.5em);
+                }
+                30%{
+                    z-index: 2;
+                }
+                
+                100%{
+                    transform: translateX(1.5em);
+                    z-index: 2;
+                }
+
+            }
+            @keyframes loseFocus {
+                20%{
+                    transform: translateY(-2em);
+                }
+                30%{
+                    z-index: 1;
+                }
+                100%{
+                    transform: translateY(-2em);
+                }
+                
+            }
+            .wrapper{
+                /* position: absolute; */
+                position: relative;
+                top:20em;
+                left: 2em;
+                height: auto;
+                display: inline-flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: right;
+                justify-content: right;
+            }
+            .cardWrap{
+                width:30em;
+                height:15em;
+                display: inline;
+                position: relative;
+                
+            }
+            .card{
+                width: 100%;
+                height: 100%;
+                border-radius: 5%;
+                box-shadow: 2px 3px 5px;
+                border: solid black 1px;
+                background-color: antiquewhite;
+                position: absolute;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            .card:hover{
+                transform: translateY(-1em);
+                transition: ease .3s;
+            }
+            .card.active{
+                animation: cardFocus .8s ease forwards;
+                
+            }
+            .card.inactive{
+                animation: loseFocus .8s ease forwards;
+            }
+            #card1{
+                top:-10em;
+                z-index: 1;
+            }
+            #card2{
+                top:-8em;
+                z-index: 1;
+            }
+            #card3{
+                top:-6em;
+                z-index: 1;
+            }
+            #card4{
+                top:-4em;
+                z-index: 1;
+            }
+            #card5{
+                top:-2em;
+                z-index: 1;
+            }
+            #card6{
+                top:0em;
+                z-index: 1;
+            }
+            .cardName{
+                display: block;
+                width: 100%;
+                height: 20%;
+                text-align: start;
+            }
+            .cardName h3{
+                position: relative;
+                top:-1em;
+                left:1em;
+                font-size: 1.2em;
+            }
+            .cardImage {
+                position: relative;
+
+            }
+            .cardDetails{
+                position: relative;
+                width: 55%;
+                top:-1em;
+            }
