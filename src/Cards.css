@@ -1,7 +1,4 @@
-*{
-    margin: none;
-    padding: none;
-}
+
             @keyframes cardFocus{
                 20%{
                     transform: translateY(-8.5em);
@@ -28,24 +25,21 @@
                 }
                 
             }
-            .wrapper{
+            .cardWrapper{
                 /* position: absolute; */
                 position: relative;
-                top:20em;
-                left: 2em;
                 height: auto;
                 display: inline-flex;
                 flex-wrap: wrap;
-                flex-direction: column;
-                align-items: right;
-                justify-content: right;
-            }
+                /* right:25%; */
+                top:.5em;
+            } 
             .cardWrap{
-                width:30em;
+                width:28em;
                 height:15em;
                 display: inline;
                 position: relative;
-                
+
             }
             .card{
                 width: 100%;
@@ -54,7 +48,7 @@
                 box-shadow: 2px 3px 5px;
                 border: solid black 1px;
                 background-color: antiquewhite;
-                position: absolute;
+                position: relative;
                 display:flex;
                 flex-wrap: wrap;
                 flex-direction: row;
@@ -71,27 +65,27 @@
                 animation: loseFocus .8s ease forwards;
             }
             #card1{
-                top:-10em;
+                top:-0em;
                 z-index: 1;
             }
             #card2{
-                top:-8em;
+                top:-13em;
                 z-index: 1;
             }
             #card3{
-                top:-6em;
+                top:-26em;
                 z-index: 1;
             }
             #card4{
-                top:-4em;
+                top:-39em;
                 z-index: 1;
             }
             #card5{
-                top:-2em;
+                top:-52em;
                 z-index: 1;
             }
             #card6{
-                top:0em;
+                top:8em;
                 z-index: 1;
             }
             .cardName{
@@ -102,7 +96,6 @@
             }
             .cardName h3{
                 position: relative;
-                top:-1em;
                 left:1em;
                 font-size: 1.2em;
             }

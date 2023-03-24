@@ -1,13 +1,17 @@
-*{
-    margin:none;
-    padding:none;
+
+@keyframes typing {
+    from {width: 0 }
+    to { width: 50%}
+}
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: orange;}
 }
 .wrapper{
     position: relative;
-    top: 30%;
-    left: 45%;
     width: 40em;
-    height: 30em;
+    height: 22em;
+    top: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,13 +23,14 @@
     position: relative;
     border-radius: 5%;
     border-top: 40px grey solid;
+    z-index: 1;
 }
 .text{
-    margin: 0;
+    margin: 0 0 0 1em;
     padding: 0;
     position: relative;
     width: 100%;
-    top:1em;
+    top:-1em;
     text-align: left;
     color: white;
 }
@@ -33,5 +38,18 @@ h2, h3{
     display: inline;
 }
 .closeWindow{
-    text-align: right;
+    cursor: default;
+    position: relative;
+    top:-1.5em;
+    left:45%;
+    font-size: 1.2em;
+    padding: none;
+    display: inline;
+    width: fit-content;
+    margin: none;
+    color: white;
+    z-index: 2;
+}
+.closeWindow:hover{
+    font-size: 1.3em;
 }

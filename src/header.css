@@ -4,7 +4,8 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
     text-align: center;
     top:0%;
     background-color: rgb(110, 134, 139);

@@ -1,0 +1,56 @@
+.expWrap{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    top: 50%;
+    z-index: 1;
+}
+.job{
+    background-color: rgb(248, 241, 241);
+    border: solid darkgrey;
+    width: 90%;
+    margin: 0 0 1em 0;
+}
+.expTxt{
+    text-align: left;
+}
+.expTxt h3{
+    color: rgb(10, 138, 189);
+}
+.expTxt h4{
+    color: gray;
+    margin: 0 !important;
+}
+.expTxt h5{
+    margin-top: 0 !important;
+}
+.nextJob {
+    border-radius: 5%;
+    background-color: cornflowerblue;
+    display: inline;
+    font-size: 1.2em;
+    width:auto;
+    padding: .5em;
+    height: 2em;
+    position: relative;
+    margin: 0 4em .5em 4em;
+}
+.nextJob:hover{
+    transform: scale(.9);
+    cursor:pointer;
+    
+}
+.moreInfo{
+    visibility: hidden;
+}
+#job2{
+    position: relative;
+    display: none;
+
+}
+#nextJob2{
+    display: none;
+}
