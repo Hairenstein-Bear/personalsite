@@ -1,16 +1,15 @@
 import './Cards.css';
 import React, {useState} from 'react';
 import weather from './images/weather.jpg';
-import randomizer from './images/randomizer.png'
+import randomizer from './images/randomizer.png';
 import wolveshead from './images/wolveshead.png';
 import frogChase from './images/frogChase.png';
 import bot from './images/bot.png';
 
 function Cards() {
   return (
-    <div className="wrapper" onLoad={focusCard()}>
-        <div className="cardWrap" id="wrap"> 
-        
+    <div className="cardWrapper">
+        <div className="cardWrap" id="wrap" onMouseOver={focusCard()}> 
             <div className="card" id="card1">
                 <div className="cardName"><h3>Weather app</h3></div>
                 <div className="cardImage"><a href="http://paulhair.me/weather.html"> <img src={weather} alt="Form requesting city and state to retreive weather data"></img></a></div>
@@ -28,7 +27,7 @@ function Cards() {
                 <div className="cardImage"><a href="http://wolvesheadpizza.com"> <img src={wolveshead} alt="hero of clinking beer glasses with links at top of page and contact info at bottom of page."></img></a></div>
                 <div className="cardDetails" >This Static website created in VSCode combines: HTML/CSS, Javascript, Jquery, and Bootstrap to create a responsive landing page to allow customers to quickly find out any business information they desire.</div>
             </div>
-
+    
             <div className="card" id="card4">
                 <div className="cardName"><h3>Frog Chase Game</h3></div>
                 <div className="cardImage"><a href="http://paulhair.me/frogChase.html"> <img src={frogChase} alt="Swamp background with small green player character and a score in the top corner"></img></a></div>
@@ -43,29 +42,19 @@ function Cards() {
         </div>
     </div>
   );
-} 
-// const [focusCard, setFocusCard] = useState(0);
-
-
- 
+}
 
 
 
 export function focusCard(){
     const cards = document.querySelectorAll('.card');
-    // let decrement = 0;
     cards.forEach(card => {
         card.addEventListener('click', function handleClick(event){
             cards.forEach(card => {
                     card.classList.remove("active");
-                    document.getElementById("wrap").style.top = "0";
-                    // decrement = 0;
                 })
             card.classList.add("active");
-            // decrement += 2;
-            document.getElementById("wrap").style.top = "-2em";  
         })
     });
-} 
-
+}
 export default Cards;
