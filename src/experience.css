@@ -13,6 +13,7 @@
     border: solid darkgrey;
     width: 90%;
     margin: 0 0 1em 0;
+    display: none;
 }
 .expTxt{
     text-align: left;
@@ -46,10 +47,12 @@
 .moreInfo{
     visibility: hidden;
 }
+#job1{
+    display: block;
+}
 #job2{
     position: relative;
     display: none;
-
 }
 #nextJob2{
     display: none;

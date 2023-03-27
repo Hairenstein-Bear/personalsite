@@ -1,0 +1,14 @@
+.contactWrap {
+    background-color: darkslategrey;
+    justify-content: center;
+    display: flex;
+    width: 90%;
+    position: absolute;
+    bottom: 0%;
+}
+.contactWrap form{
+    margin: .5em .5em .5em .5em;
+}
+form label{
+    margin: 1em 1em 1em 1em;
+}

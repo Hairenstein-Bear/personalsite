@@ -101,10 +101,11 @@
             }
             .cardImage {
                 position: relative;
-
+                margin: -1em 0 0 1em;
             }
             .cardDetails{
                 position: relative;
-                width: 55%;
+                width: 60%;
                 top:-1em;
+                margin: 0 0 0 2em;
             }

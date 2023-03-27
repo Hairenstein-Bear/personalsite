@@ -1,4 +1,5 @@
 import './background.css'
+import bubble from './images/bubbletrans.png';
 import React, {useState, useEffect} from 'react';
 
 function getRandomIntInclusive(min, max) {
@@ -18,7 +19,9 @@ function useBubbles() {
       let colors = ["blue", "red", "yellow", "green", "black", "purple"];
       let colorIndex = Math.floor(Math.random() * 6);
       const bubbleStyle = {
-        backgroundColor: 'black',
+        backgroundImage: `url(${bubble})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         height: height,
         width: width,
         borderRadius: "50%",
@@ -26,7 +29,7 @@ function useBubbles() {
         left: `${Math.random() * 100}%`,
         position: "absolute",
         margin: "10px 10px 10px 10px",
-        opacity: "20%",
+        opacity: "70%",
         zIndex:"0"
       };
       setBubbles((prevBubbles) => [...prevBubbles, bubbleStyle]);

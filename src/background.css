@@ -9,7 +9,8 @@
 .container{
     top:0%;
     width: 100vw;
-    height: 100vh;
+    height: 150em;
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: #546A76;
 }
