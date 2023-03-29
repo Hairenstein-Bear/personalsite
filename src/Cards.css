@@ -1,4 +1,6 @@
-
+    @media scree {
+        
+    }
             @keyframes cardFocus{
                 20%{
                     transform: translateY(-8.5em);
