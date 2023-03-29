@@ -37,8 +37,8 @@
                 top:.5em;
             } 
             .cardWrap{
-                width:28em;
-                height:15em;
+                max-width:28em;
+                max-height:15em;
                 display: inline;
                 position: relative;
 
